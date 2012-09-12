@@ -1,13 +1,14 @@
 #Programming Languages
 #CMSI 386
 #Homework 1
-#Problem 5
+#Problem 7
 #By: Kaitlyn Higa and Lisa Rosenbaum
 
-
-def interleave(a,b)
-	a.zip(b).flatten.compact
+def prefixes(s)
+    s.each_char {|c| s[0, c]}
 end
+
+puts"#{prefixes("matsumoto")}"
 
 #
 #

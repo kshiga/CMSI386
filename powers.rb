@@ -1,10 +1,22 @@
-def powers(b, l)
-        for n in 1..l 
-	    s = b**(n-1)
-            print"#{s}\n" if s <= l
-        end
+#Programming Languages
+#CMSI 386
+#Homework 1
+#Problem 4
+#This Ruby method yields powers of base b
+#starting at exponent 0 and going up to 
+#limit l.
+#
+#By: Kaitlyn Higa and Lisa Rosenbaum
 
+
+def powers(b, l)
+    (0..l).map{|x| b**x if l >= (b**x) }
 end
 
-powers(3, 400)
+powers(2, 4000)
 
+
+
+#
+#
+#Avaliable at https://github.com/kshiga/CMSI386

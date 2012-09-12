@@ -1,13 +1,19 @@
 #Programming Languages
 #CMSI 386
 #Homework 1
-#Problem 5
+#Problem 4
+#This Ruby method yields powers of base b
+#
 #By: Kaitlyn Higa and Lisa Rosenbaum
 
 
-def interleave(a,b)
-	a.zip(b).flatten.compact
+def powers(b, l)
+    (0..l).map{|x| b**x if l >= (b**x) }
 end
+
+powers(2, 4000)
+
+
 
 #
 #

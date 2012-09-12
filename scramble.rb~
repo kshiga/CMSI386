@@ -1,14 +1,18 @@
 #Programming Languages
 #CMSI 386
 #Homework 1
-#Problem 5
+#Problem 2
 #By: Kaitlyn Higa and Lisa Rosenbaum
 
 
-def interleave(a,b)
-	a.zip(b).flatten.compact
+def scramble(s)
+   s.split('').shuffle* ""
 end
+
+puts scramble("Hello, world")
 
 #
 #
 #Avaliable at https://github.com/kshiga/CMSI386
+
+
