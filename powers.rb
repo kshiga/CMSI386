@@ -7,13 +7,14 @@
 #limit l.
 #
 #By: Kaitlyn Higa and Lisa Rosenbaum
-
+#
+#
 
 def powers(b, l)
-    (0..l).map{|x| b**x if l >= (b**x) }
+    0.upto(l) {|x| puts"#{b**x}" if l >= (b**x)}
 end
 
-powers(2, 4000)
+puts"#{powers(2, 4000)}"
 
 
 

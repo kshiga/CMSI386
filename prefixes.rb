@@ -7,6 +7,8 @@
 #the first prefiz, which is zero characters long
 # 
 #By: Kaitlyn Higa and Lisa Rosenbaum
+#
+#
 
 def prefixes(s)
     s.each_char {|c| puts"s[0, c]"}
