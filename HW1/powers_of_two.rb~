@@ -10,7 +10,7 @@
 #
 
 def powers_of_two(x)
-    0.upto(x) {|n| (2**n) if x >= (2**n)}
+    0.upto(x) {|n| (2**n) if x >= (2**n)}.compact
 end
 
 #powers_of_two(800)

@@ -17,4 +17,4 @@ end
 
 #
 #
-#Avaliable at https://github.com/kshiga/CMSI386
+#Avaliable at https://github.com/kshiga/CMSI386/tree/master/HW1

@@ -11,7 +11,7 @@
 #
 
 def strip_vowels(s)
- s.delete "aeiou"
+ s.delete "aeiouAEIOU"
 end
 
 print "#{strip_vowels("hello world")} \n"

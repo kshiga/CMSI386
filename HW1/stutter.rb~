@@ -17,4 +17,4 @@ print "#{stutter([5, 4, [3], 9]).inspect} \n"
 
 #
 #
-#Avaliable at https://github.com/kshiga/CMSI386/tree/master/HW1
+#Avaliable at https://github.com/kshiga/CMSI386

@@ -12,11 +12,11 @@
 #
 
 def interleave(a,b)
-	a.zip(b).flattem(1).take(a.length+b.length)
+	a.zip(b).flatten(1).compact
 end
 
 
 
 #
 #
-#Avaliable at https://github.com/kshiga/CMSI386
+#Avaliable at https://github.com/kshiga/CMSI386/tree/master/HW1
