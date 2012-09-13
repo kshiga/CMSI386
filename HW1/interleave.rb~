@@ -11,10 +11,13 @@
 #
 #
 
-def interleave(a,b)
-	a.zip(b).flattem(1).take(a.length+b.length)
+def interleave(a,b)	
+	n = []
+	a.each_with_index{|x, c| n << x << b[c]}
+	puts "#{n}"
 end
 
+puts"#{interleave([1, 2, 5, 7, 10, 30], [ 5, 7, 10])}"
 
 
 #

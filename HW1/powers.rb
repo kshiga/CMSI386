@@ -11,10 +11,10 @@
 #
 
 def powers(b, l)
-    0.upto(l) {|x| (b**x) if l >= (b**x)}.compact
+    0.upto(l) {|x| (b**x) if l >= (b**x)}.compact.uniq!
 end
 
-#puts"#{powers(2, 4000)}"
+puts"#{powers(1, 10000)}"
 
 
 

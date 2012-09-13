@@ -40,18 +40,30 @@ class TestUtil < Test::Unit::TestCase
   end
 
   def test_powers()
-    assert_e
+    assert_equal(powers(0,0), []);
+    assert_equal(powers(0,1), [0, 1]);
+    assert_equal(powers(1,1), [1]);
+    assert_equal(powers(1,100), [1]);
+    assert_equal(powers(3,100), [3, 9, 27, 81]);
+    assert_equal(powers(100, 2), [1]);
+	
   end
 
   def test_interleave()
-    assert_equal(interleave([1, 2], [nil, 5, 7, 10]), [1, nil, 2, 5, 7, 10])
-    # TODO - lots more tests
+    assert_equal(interleave([1, 2], [nil, 5, 7, 10]), [1, nil, 2, 5, 7, 10]);
+    assert_equal(interleave([1, 2], []), [1, 2]);
+    assert_equal(interleave([], [nil, 5, 7, 10]), [nil, 5, 7, 10]);
+    assert_equal(interleave([1, 2, 3], ["a", "b", "c"]), [1, "a", 2, "b", 3, "c"]);
+    assert_equal(interleave([], []), []);
+
   end
 
   def test_stutter()
     assert_equal([1, 1].stutter, [1, 1, 1, 1]);
     assert_equal([].stutter,[]);
 	assert_equal([a, b, c, dddd, 1, 2, 3].stutter, [a, a, b, b, c, c, dddd, dddd, 1, 1, 2, 2, 3, 3]);
+    assert_equal([abcdefg].stutter,[abcedfg, abcdefg]);
+    assert_equal(["a", b, "c", 4].stutter,["a", "a", b, b, "c", "c", 4, 4]);
   end
 
 end
